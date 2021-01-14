@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles.css') }}">
+    <title>Star Wars Api</title>
+</head>
+
+<body>
+    <div class="all">
+    <h1>All films for the Star Wars Website</h1>
+    <ul class="ul">
+        {% for film in films %}
+
+        <li class="li">{{ film }}</li>
+
+        {% endfor %}
+    </ul>
+    <button class="btn"><a href="/">Home</a></button>
+</div>
+</body>
+
+</html>
